@@ -26,10 +26,10 @@
 ## ⚙️ How It Works
 
 ```mermaid
-graph TD;
+graph TD
     A[Load PDF] --> B[Split into Chunks]
-    B --> C[Generate Embeddings (OpenAI)]
+    B --> C[Generate Embeddings with OpenAI]
     C --> D[Store in Pinecone Vector DB]
     E[User Query] --> F[Cosine Similarity Search]
-    F --> G[Relevant Chunks]
-    G --> H[LangChain + GPT-4o-mini Response]
+    F --> G[Retrieve Relevant Chunks]
+    G --> H[LLM Response using GPT-4o-mini]
