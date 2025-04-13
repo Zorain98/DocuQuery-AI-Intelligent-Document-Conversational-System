@@ -1,40 +1,35 @@
-📄 DocuQuery AI — Intelligent Document Conversational System
-Tech Stack: LangChain • OpenAI GPT-4o-mini • Pinecone • OpenAI Embeddings • Python
+# 📄 DocuQuery AI — Intelligent Document Conversational System
 
-🔍 Overview
-DocuQuery AI is an intelligent, LLM-powered system that allows users to interact with PDF documents using natural language queries. Built using LangChain and GPT-4o-mini, the system transforms static documents into dynamic, searchable knowledge bases.
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat&logo=python)
+![LangChain](https://img.shields.io/badge/LangChain-Enabled-yellowgreen?style=flat)
+![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--mini-brightgreen?style=flat)
+![Pinecone](https://img.shields.io/badge/Pinecone-VectorDB-blueviolet?style=flat)
 
-⚙️ Key Features
-📄 Loads and preprocesses PDF documents
+## 🔍 Overview
 
-✂️ Chunks documents into smaller, meaningful text segments
+**DocuQuery AI** is an advanced document intelligence system that enables users to **chat with PDFs** using natural language. Powered by **LangChain**, **GPT-4o-mini**, and **Pinecone**, it transforms static documents into dynamic, conversational knowledge sources.
 
-🧠 Creates vector embeddings using OpenAI Embeddings
+---
 
-📦 Stores embeddings in a Pinecone vector database (total: 58 embeddings)
+## 🚀 Features
 
-🧭 Uses cosine similarity for fast and accurate semantic search
+- 📄 Load and process PDF documents
+- ✂️ Chunk documents into smaller, semantically meaningful text segments
+- 🧠 Generate vector embeddings with `OpenAI Embeddings`
+- 📦 Store embeddings in `Pinecone Vector Database` (Total: **58 embeddings** generated)
+- 🧭 Use `cosine similarity` for efficient semantic retrieval
+- 💬 Respond to natural language queries using `GPT-4o-mini` via LangChain
+- ⚡ Fast, accurate, and highly scalable for various document types
 
-💬 Integrates with GPT-4o-mini via LangChain to generate intelligent, context-aware answers
+---
 
-🚀 How It Works
-Document Upload: Load any PDF file for processing
+## ⚙️ How It Works
 
-Text Chunking: Divide the document into manageable text chunks
-
-Embedding Generation: Create embeddings with OpenAI's embedding model
-
-Vector Storage: Store vectors in Pinecone with unique IDs
-
-Semantic Search: Perform cosine similarity search on user queries
-
-Conversational Answering: Return relevant answers using GPT-4o-mini via LangChain
-
-📌 Use Cases
-Legal Document Search
-
-Academic Paper Summaries
-
-Technical Manual Exploration
-
-Business Reports Q&A
+```mermaid
+graph TD;
+    A[Load PDF] --> B[Split into Chunks]
+    B --> C[Generate Embeddings (OpenAI)]
+    C --> D[Store in Pinecone Vector DB]
+    E[User Query] --> F[Cosine Similarity Search]
+    F --> G[Relevant Chunks]
+    G --> H[LangChain + GPT-4o-mini Response]
